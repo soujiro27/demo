@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>conexion  a BD</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+</head>
+<body>
+	
+<form action="registro.php" method="POST">
+	<label for="">
+		Nombre
+	</label>
+	<input type="text" name="nombre" >
+	<label for="">
+		clave
+	</label>
+	<input type="password" name="pass">
+	<label for="">Tipo</label>
+	<input type="number" name="tipo">
+	<input type="submit" value="Registrar" class="btn btn-primary">
+	
+</form>
+
+
+<form action="consulta.php" method="POST">
+	<label for="">Cosulta Nombre</label>
+	<input type="text" name="busqueda">
+	<input type="submit" value="Consultar">
+</form>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,53 @@
+.logo
+{
+	width: 75px;
+	height: 75px;
+	margin-left:120px;
+	vertical-align: top: 
+}
+
+p#cubito1
+{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	background: #ae3222;
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s;
+	transition:all 2s;
+}
+
+p#cubito2
+{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	background: #376cd6;
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s;
+	transition:all 2s;
+	-webkit-animation:shake .5s 4;
+}
+
+p#cubito1:hover + #cubito2
+{
+	left:900px;
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s;
+	transition:all 2s;
+}
+
+
+@-webkit-keyframes kikin{
+	0%{left:0px;}
+	100%{left:700px;}
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+
+
