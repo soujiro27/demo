@@ -3,15 +3,18 @@ $(document).on("ready",esconde);
 function esconde()
 {
 	$("aside.lateral").hide();
+	$(".calificaciones").hide();
 }
 
-
-function muestra()
+function cali()
 {
-	$("aside.lateral").show();
+	$("#bienvenida").hide();
+	$(".calificaciones").show('slow');
 }
 
 
- $(function () {
-                $('#tooltip1').tooltip();
-            });
+$(function () {
+    $('#tooltip1').tooltip();
+});
+
+

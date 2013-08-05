@@ -1,6 +1,7 @@
 body
 {
 	font-size: 16px;
+	background: #E9ECEF;
 }
 
 header.menu
@@ -37,7 +38,7 @@ ul li img:hover
 	-webkit-animation: swing 1s 5;
 }
 
-section article article img
+section article article.datos img
 {
 	border-radius: 50%;
 	border:4px solid black;
@@ -47,8 +48,10 @@ section article article img
 
 article.datos
 {
-	background: #dfe1e6;
+	background: white;
 	border-bottom: 3px solid blue;
+
+
 }
 
 article.grupos
@@ -56,12 +59,13 @@ article.grupos
 	margin: 5% 0 0 0;
 	text-align: center;
 	border-bottom: 3px solid blue;
+	background: #dfe1e6;;
 }
 
 
 article.grupos h4
 {
-	background:  #dfe1e6;
+	background: white;
 	height: 30px;
 
 }
@@ -82,8 +86,62 @@ section.container
 
 article h5
 {
-	background: #dfe1e6;
+	background: white;
 	padding: 1% 0 !important;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+h4.nombre_alumno
+{
+	text-transform: uppercase;
+	font-family: Arial;
+	
+}
+
+
+
+hgroup.head_welcome 
+{
+	background: white;
+	padding: 1%;
+	text-align: justify;
+	border-bottom: 3px solid black;
+}
+
+
+
+article.des_cali figure 
+{
+	
+	display: inline-block;	
+	width: 10%;
+}
+
+article.des_cali p
+{
+	display: inline-block;
+	width: 75%;
+}
+
+article.des_asistencias figure 
+{
+	
+	display: inline-block;	
+	width: 10%;
+}
+
+article.des_asistencias p
+{
+	display: inline-block;
+	width: 75%;
+}
+
+article.descripcion img:hover
+{
+	-webkit-animation: swing 1s 5;
 }
 
 @-webkit-keyframes swing {
@@ -94,4 +152,3 @@ article h5
 	80% { -webkit-transform: rotate(-5deg); }	
 	100% { -webkit-transform: rotate(0deg); }
 }
-
