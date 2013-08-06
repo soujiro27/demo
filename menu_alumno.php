@@ -3,12 +3,14 @@ session_start();
 $_SESSION["nombre"];
 $_SESSION["carrera"]; 
 $_SESSION["cuatri"];
+$_SESSION["id"];
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<title>Plataforma Educativa</title>
+	<link rel="icon" type="image/png" href="/images/mifavicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Checa aisistencias, calificaciones, sube archivos online">
 	<meta name="author" content="ISC10">
@@ -25,10 +27,11 @@ $_SESSION["cuatri"];
 
 </head>
 <body>
+	
 <header class="menu">
 	<ul>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Inicio"><img src="img/menu/home.png" ></a></li>
-		<li><a href="#" id="tooltip1" rel="tooltip" title="Calificaciones" onclick="cali();"><img src="img/menu/calendar.png" alt=""></a></li>
+		<li><a href="#" id="tooltip1" rel="tooltip" title="Calificaciones" onclick="cali(<?php echo $_SESSION['id'];?> );"><img src="img/menu/calendar.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Asistencias"><img src="img/menu/address-book.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Foros"><img src="img/menu/compose-4.png" alt=""></a></li>
 		<li><a href="#" id="tooltip1" rel="tooltip" title="Archivos"><img src="img/menu/folder-add.png" alt=""></a></li>
@@ -85,45 +88,9 @@ $_SESSION["cuatri"];
 </section>
 
 
-<section class="calificaciones">
-<div class="accordion calificaciones" id="accordion">
-		 	<div class="accordion-group">
-		 		<div class="accordion-heading">
-		 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		 				Collapsible Group Item #1
-		 			</a>
-		 		</div>
-		 		<div id="collapseOne" class="accordion-body collapse in">
-		 			<div class="accordion-inner">
-		 				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		 			</div>
-		 		</div>
-		 	</div>
-		 	<div class="accordion-group">
-		 		<div class="accordion-heading">
-		 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		 				Collapsible Group Item #2
-		 			</a>
-		 		</div>
-		 		<div id="collapseTwo" class="accordion-body collapse">
-		 			<div class="accordion-inner">
-		 				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		 			</div>
-		 		</div>
-		 	</div>
-		 	<div class="accordion-group">
-		 		<div class="accordion-heading">
-		 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		 				Collapsible Group Item #3
-		 			</a>
-		 		</div>
-		 		<div id="collapseThree" class="accordion-body collapse">
-		 			<div class="accordion-inner">
-		 				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		 			</div>
-		 		</div>
-		 	</div>	
-		 	</div>
+<section class="calificaciones" id="secion_calificaciones">
+
+		 	
 </section>
 
 
